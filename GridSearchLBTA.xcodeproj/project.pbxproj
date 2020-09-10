@@ -3,20 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		339954D1250A61C300B76B18 /* GridSearchLBTAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339954D0250A61C300B76B18 /* GridSearchLBTAApp.swift */; };
-		339954D3250A61C300B76B18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339954D2250A61C300B76B18 /* ContentView.swift */; };
+		339954D3250A61C300B76B18 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339954D2250A61C300B76B18 /* GridView.swift */; };
 		339954D5250A61C500B76B18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 339954D4250A61C500B76B18 /* Assets.xcassets */; };
 		339954D8250A61C500B76B18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 339954D7250A61C500B76B18 /* Preview Assets.xcassets */; };
+		339954E1250A77DC00B76B18 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 339954E0250A77DC00B76B18 /* KingfisherSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		339954CD250A61C300B76B18 /* GridSearchLBTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GridSearchLBTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		339954D0250A61C300B76B18 /* GridSearchLBTAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridSearchLBTAApp.swift; sourceTree = "<group>"; };
-		339954D2250A61C300B76B18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		339954D2250A61C300B76B18 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		339954D4250A61C500B76B18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		339954D7250A61C500B76B18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		339954D9250A61C500B76B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				339954E1250A77DC00B76B18 /* KingfisherSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				339954D0250A61C300B76B18 /* GridSearchLBTAApp.swift */,
-				339954D2250A61C300B76B18 /* ContentView.swift */,
+				339954D2250A61C300B76B18 /* GridView.swift */,
 				339954D4250A61C500B76B18 /* Assets.xcassets */,
 				339954D9250A61C500B76B18 /* Info.plist */,
 				339954D6250A61C500B76B18 /* Preview Content */,
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = GridSearchLBTA;
+			packageProductDependencies = (
+				339954E0250A77DC00B76B18 /* KingfisherSwiftUI */,
+			);
 			productName = GridSearchLBTA;
 			productReference = 339954CD250A61C300B76B18 /* GridSearchLBTA.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 339954C4250A61C300B76B18;
+			packageReferences = (
+				339954DF250A77DB00B76B18 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 339954CE250A61C300B76B18 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				339954D3250A61C300B76B18 /* ContentView.swift in Sources */,
+				339954D3250A61C300B76B18 /* GridView.swift in Sources */,
 				339954D1250A61C300B76B18 /* GridSearchLBTAApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +334,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		339954DF250A77DB00B76B18 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		339954E0250A77DC00B76B18 /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 339954DF250A77DB00B76B18 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 339954C5250A61C300B76B18 /* Project object */;
 }
